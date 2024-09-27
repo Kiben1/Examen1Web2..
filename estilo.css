@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding: 15px;
+}
+
+.menu2{
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    padding: 30px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover{
+   transform: scale(1.2);
+   background-color: brown;
+   border-radius: 5px;
+}
+
+.menu img:hover{
+    transform: scale(1.1);
+}
+
+/*Section 2: slider de fotos*/
+.slider-container{
+    display: grid;
+    background-color: rgb(47, 202, 151);
+    height: 50px;
+}
+.tarjeta3{
+    position: relative;
+    width: 100%;
+    max-height: 800px;
+    max-width: 100%;
+}
+.tarjeta3 img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.container3{
+    font-family: fantasy;
+    font-size: 50px;
+    margin-bottom: 10px;
+    /*permite superponer el contenido*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(245, 241, 245);
+    padding: 20px;
+}
+.slogan:hover{
+    color: aquamarine;
+    translate: 100%;
+}
+
+
+/*mosaic  */
+.text-mosaic{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-area: 20px;
+    gap: 20px;
+}
+.text-content{
+    background-color: rgb(136, 136, 235);
+    height: 150px;
+    padding: 30px;
+}
+.mosaic{
+    display: grid;
+    /*mosaic 2 columnas*/
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: rgb(245, 242, 239);
+    height: 150px;
+}
+/*section 4: Cards*/
+.cards{
+    display: grid;
+    /* 3 columnas iguales*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    padding: 30px;
+    background-color: yellow;
+    text-align: center;
+}
+.card1{
+    padding: 30px;
+    background-color: rgb(0, 225, 255);
+    text-align: center;
+}
+/* section 5: formulario de contacto y fotografia*/
+.contact-photo{
+    display: grid;
+    /*2 columnas iguales*/
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+}
+.contact-form{
+    background-color: green;
+    height: 180px;
+}
+
